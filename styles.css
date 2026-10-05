@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  padding: 2rem 4rem;
+}
+
+h1 {
+  margin: 0;
+  color: rgba(25, 77, 118, 0.9);
+  font-size: clamp(3.5rem, 6vw, 9rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+  text-align: left;
+  text-shadow: 0 0 1px rgba(22, 84, 134, 0.7);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem 1.5rem;
+  }
+
+  h1 {
+    line-height: 1.04;
+    letter-spacing: -0.04em;
+  }
+}
